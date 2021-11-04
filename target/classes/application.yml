@@ -1,0 +1,17 @@
+camel:
+  springboot:
+    name: MyCamel
+greeting: Hello World
+management:
+  endpoint:
+    camelroutes:
+      enabled: true
+      read-only: true
+    health:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info,health,camelroutes
+timer:
+  period: 2000
